@@ -1,49 +1,60 @@
-#Description
-Monty is an interpreter for Monty bytecode. It reads and interprets Monty bytecode from a file, executing the corresponding commands. Monty supports both stack (LIFO) and queue (FIFO) modes.
+# 0x19 C - Stacks, Queues - LIFO, FIFO :pencil2:
 
-#Compilation
-To compile the Monty interpreter, use the following command:
+> C is a powerful general-purpose programming language. It can be used to develop software like operating systems, databases, compilers, and so on. This projects covers concepts of Stacks, Queues, LIFO, FIFO implementation.
+This was a duo project with the awesome partner [Karen Herrera](https://github.com/karenaHV/)
 
-bash
-gcc -Wall -Werror -Wextra -pedantic -std=c89 *.c -o monty
-Usage
-To run Monty with a bytecode file, use the following command:
+At the end of this project, We were able to solve these questions:
+  
+* What do LIFO and FIFO mean
+* What is a stack, and when to use it
+* What is a queue, and when to use it
+* What are the common implementations of stacks and queues
+* What are the most common use cases of stacks and queues
+* What is the proper way to use global variables
 
-bash
-./monty <filename>
+## Tasks :heavy_check_mark:
 
-#Instructions
-push - Pushes an integer onto the stack.
-pall - Prints all the elements of the stack.
-pint - Prints the value at the top of the stack.
-pop - Removes the top element of the stack.
-swap - Swaps the top two elements of the stack.
-add - Adds the top two elements of the stack.
-nop - Does nothing with the stack.
-sub - Subtracts the top element from the second element of the stack.
-div - Divides the second element by the top element of the stack.
-mul - Multiplies the top two elements of the stack.
-mod - Computes the modulus of the second element by the top element of the stack.
-pchar - Prints the ASCII character corresponding to the top element of the stack.
-pstr - Prints the string represented by the stack's ASCII values.
-rotl - Rotates the stack to the left.
-rotr - Rotates the stack to the right.
-stack - Sets the current mode to stack (LIFO).
-queue - Sets the current mode to queue (FIFO).
-Example
-bash
-Copy code
-./monty bytecode.m
-#File Structure
-essentials.c - Contains essential utility functions.
-instructions_1.c - Contains stack manipulation instructions.
-instructions_2.c - Contains arithmetic and logic instructions.
-instructions_3.c - Contains printing instructions.
-instructions_4.c - Contains rotation and mode-setting instructions.
-main.c - Entry point for the Monty interpreter.
-linkedList.c - Contains functions related to the doubly linked list.
-#Contributors
-Ashraf
-Ahmed
-License
-This project is not licensed. Feel free to use and modify as needed.
+0. Implement the push and pall opcodes
+1. Implement the pint opcode.
+2. Implement the pop opcode.
+3. Implement the swap opcode.
+4. Implement the add opcode.
+5. Implement the nop opcode.
+6. Implement the sub opcode.
+7. Implement the div opcode.
+8. Implement the mul opcode.
+9. Implement the mod opcode.
+10. When the first non-space character of a line is #, treat this line as a comment (don’t do anything).
+11. Implement the pchar opcode.
+12. Implement the pstr opcode.
+13. Implement the rotl opcode.
+14. Implement the rotr opcode.
+15. Implement the stack and queue opcodes.
+16. Write a Brainf*ck script that prints Holberton (at bf/dir)
+17. Read the two digits from stdin, add them, and print the result (at bf/dir)
+18. Read the two digits from stdin, multiply them, and print the result (at bf/dir)
+19. Multiply two digits given by the user. (at bf/dir)
+
+
+## Additional info :construction:
+### Resources
+
+- GLIBC 2.24
+- gcc 4.8.4
+- betty linter 0.32
+
+
+
+### Try It On Your Machine computer:	
+```bash
+git clone https://github.com/edward0rtiz/holbertonschool-low_level_programming.git
+cd monty
+gcc -Wall -Werror -Wextra -pedantic *.c -o monty
+USAGE
+cat -e bytecodes/000.m
+
+FORT TESTING WITH BYTECODES:
+cd bytecodes
+cat bytecodes/FILENAME.m
+./monty bytecodes/FILENAME.m
+```
