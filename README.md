@@ -1,5 +1,5 @@
 # C - Stacks, Queues - LIFO, FIFO :pencil2:
-
+**About:** In this project, we created a simple interpreter for Monty ByteCodes. The interpreter reads a bytecode file and executes the bytecode commands.
 > C is a powerful general-purpose programming language. It can be used to develop software like operating systems, databases, compilers, and so on. This projects covers concepts of Stacks, Queues, LIFO, FIFO implementation.
 This was a duo project with the awesome partner [Karen Herrera](https://github.com/karenaHV/)
 
